@@ -1,0 +1,105 @@
+<div class="" style="padding-top: 15%;">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#cuisine" role="tab" aria-controls="home"
+        aria-selected="true">Cuisine</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#patisserie" role="tab" aria-controls="profile"
+        aria-selected="false">Patisserie</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#service" role="tab" aria-controls="contact"
+        aria-selected="false">Service-Bar</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="cuisine" role="tabpanel" aria-labelledby="home-tab">
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'" class="row"> <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="w-100" src="./assets/params/images/logo/cuisine.png" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 1.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+       </div>
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'"class="row"> <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="w-100" src="./assets/params/images/logo/cuisine.png" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 2.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+       </div>
+       <div *ngIf="testcours2 !== 'quit' || testcours1 !== 'ok'" class="row">
+         <div class="col-sm-2"></div>
+<div class="col-sm-8" style="padding-top: 5%;">
+        <div class=" d-flex border rounded p-4 mb-5 h-100 w-100" style="background-color:  #294070">
+          <img class="w-100" src="./assets/params/images/logo/cuisine.png" alt="Image Siege CAIF ">
+          <div class="text-white ml-2 border-left border-1 p-1">
+            <h2 class="">Chapitre 3.Introduction</h2>
+            <p class="">Propose un minimum de 80 heures de formations : en Hygiène, cuisine, Boulangerie, Pâtisserie,
+              Couture, Coupe, Dessin,
+              Teinture, Coiffure ou Leadership etc. Des formations adaptées en fonctions de vos besoins et proposées à
+              travers tous le
+              Sénégal</p>
+
+              <button type="button" (click)="getCours()" class="btn btn-primary" style="margin-left: 65%;">Voir les cours</button>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+       </div>
+       <div *ngIf="testcours1 == 'ok'" class="row">
+          <div class="col-sm-2"></div>
+          <div class="row col-sm-8">
+       <div class="list-group col-sm-6 h-100 w-100">
+        <button type="button" (click)="getP1()" class="list-group-item list-group-item-action ">
+          Parti 1
+        </button>
+        <button type="button" (click)="getP2()" class="list-group-item list-group-item-action">Parti 2</button>
+        <button type="button" (click)="getP3()" class="list-group-item list-group-item-action">Parti 3</button>
+        <button type="button" (click)="getP4()" class="list-group-item list-group-item-action">Parti 4</button>
+        <button type="button" (click)="getP5()" class="list-group-item list-group-item-action">Parti 5</button>
+      </div>
+      <iframe *ngIf="part === 'ok1' || part ===''"class="col-sm-6 h-100 w-100"width="311" height="180" src="https://www.youtube.com/embed/YZ5BJ1b4ITU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <div class="col-sm-6"></div>
+  </div>
+    </div>
+    <div class="tab-pane fade" id="patisserie" role="tabpanel" aria-labelledby="profile-tab">
+
+    </div>
+    <div class="tab-pane fade" id="service" role="tabpanel" aria-labelledby="contact-tab">
+
+    </div>
+  </div>
+</div>
